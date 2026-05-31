@@ -1,0 +1,28 @@
+name: Streamlit App Check
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v3
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.11'
+    - name: Install dependencies
+      run: |
+        pip install -r requirements.txt
+    - name: Check app syntax
+      run: |
+        python -c "import ast; ast.parse(open('app.py').read()); print('app.py OK')"
+        python -c "import ast; ast.parse(open('pages/overview.py').read()); print('overview.py OK')"
+        python -c "import ast; ast.parse(open('pages/fare_predictor.py').read()); print('fare_predictor.py OK')"
+        python -c "import ast; ast.parse(open('pages/congestion.py').read()); print('congestion.py OK')"
+        python -c "import ast; ast.parse(open('pages/model_performance.py').read()); print('model_performance.py OK')"
+        python -c "import ast; ast.parse(open('pages/driver_earnings.py').read()); print('driver_earnings.py OK')"
