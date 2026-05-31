@@ -1,6 +1,6 @@
 # NYC TLC Fare Intelligence Dashboard
 
-> Parsa Majidifard · 225539173 · Deakin University · SIT731 Task 8HD
+> Parsa Majidifard
 
 End-to-end NYC Yellow Taxi fare prediction dashboard built on a Databricks medallion pipeline (182M → 151M trips, 2022–2026).
 

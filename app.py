@@ -173,8 +173,7 @@ with st.sidebar:
 
     st.markdown("""
         <div style='margin-top: 2rem; padding-top: 0.8rem; border-top: 1px solid #2a2a3a; font-size: 0.7rem; color: #444;'>
-            <div>Parsa Majidifard · 225539173</div>
-            <div>Deakin University · SIT731</div>
+            <div>Parsa Majidifard</div>
             <div style='margin-top: 0.3rem;'>151M trips · Medallion Pipeline</div>
         </div>
     """, unsafe_allow_html=True)
