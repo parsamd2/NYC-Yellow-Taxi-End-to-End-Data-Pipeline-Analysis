@@ -182,17 +182,17 @@ with st.sidebar:
 
 # Route to pages
 if page == "🏠 Overview":
-    from pages import overview
+    from views import overview
     overview.render()
 elif page == "💰 Fare Predictor":
-    from pages import fare_predictor
+    from views import fare_predictor
     fare_predictor.render()
 elif page == "🚦 Congestion Insights":
-    from pages import congestion
+    from views import congestion
     congestion.render()
 elif page == "📊 Model Performance":
-    from pages import model_performance
+    from views import model_performance
     model_performance.render()
 elif page == "🚗 Driver Earnings":
-    from pages import driver_earnings
+    from views import driver_earnings
     driver_earnings.render()
