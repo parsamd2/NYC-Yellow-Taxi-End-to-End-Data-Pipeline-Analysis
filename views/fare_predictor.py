@@ -51,7 +51,7 @@ def predict_fare(features: dict):
 def render():
     st.markdown("""
         <div style='margin-bottom:1.5rem;'>
-            <h1 style='margin:0;'>💰 Fare Predictor</h1>
+            <h1 style='margin:0;'>Fare Predictor</h1>
             <p style='color:#888; margin-top:0.3rem;'>Enter trip details to get an XGBoost-powered fare estimate</p>
         </div>
     """, unsafe_allow_html=True)
@@ -115,7 +115,7 @@ def render():
         }
         route_multiplier = route_multipliers.get((pickup_borough, dropoff_borough), 1.0)
 
-        predict_btn = st.button("🔮 Predict Fare")
+        predict_btn = st.button("Predict Fare")
 
     with col_result:
         st.markdown("#### Fare Estimate")
@@ -189,13 +189,13 @@ def render():
             # Context flags
             flags = []
             if is_rush:
-                flags.append(("⚡ Rush Hour", "#f5a623"))
+                flags.append(("Rush Hour", "#f5a623"))
             if is_post_congestion:
-                flags.append(("🚧 Congestion Zone", "#d4704a"))
+                flags.append(("Congestion Pricing", "#d4704a"))
             if is_airport:
-                flags.append(("✈️ Airport Trip", "#7aa0d4"))
+                flags.append(("Airport", "#7aa0d4"))
             if is_cbd_pickup or is_cbd_dropoff:
-                flags.append(("🏙️ CBD", "#a0d47a"))
+                flags.append(("CBD", "#a0d47a"))
 
             if flags:
                 st.markdown("<div style='margin-top:1rem;'>" + "".join(
@@ -206,7 +206,6 @@ def render():
         else:
             st.markdown("""
                 <div style='background:#16161f; border:1px dashed #2a2a3a; border-radius:16px; padding:3rem; text-align:center; color:#444;'>
-                    <div style='font-size:2.5rem; margin-bottom:1rem;'>🔮</div>
                     <div style='font-family:Space Mono,monospace; font-size:0.9rem;'>Fill in trip details<br>and click Predict</div>
                 </div>
             """, unsafe_allow_html=True)

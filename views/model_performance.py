@@ -37,7 +37,7 @@ def get_simulated_predictions():
 def render():
     st.markdown("""
         <div style='margin-bottom:1.5rem;'>
-            <h1 style='margin:0;'>📊 Model Performance</h1>
+            <h1 style='margin:0;'>Model Performance</h1>
             <p style='color:#888; margin-top:0.3rem;'>Comparing all 4 fare prediction models trained on 151M NYC taxi trips</p>
         </div>
     """, unsafe_allow_html=True)
@@ -58,7 +58,7 @@ def render():
         </div>
     """, unsafe_allow_html=True)
 
-    tab1, tab2, tab3 = st.tabs(["📋 Metrics Table", "📉 Predicted vs Actual", "🔍 Error Analysis"])
+    tab1, tab2, tab3 = st.tabs(["Metrics Table", "Predicted vs Actual", "Error Analysis"])
 
     with tab1:
         # Metric comparison bars

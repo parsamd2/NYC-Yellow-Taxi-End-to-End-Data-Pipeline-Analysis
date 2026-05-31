@@ -55,17 +55,17 @@ def render():
         st.markdown("""
             <div style='background:#16161f; border:1px solid #2a2a3a; border-radius:12px; padding:1.5rem;'>
                 <div style='display:flex; align-items:center; gap:1rem; margin-bottom:1rem;'>
-                    <div style='background:#1e2a3a; border:1px solid #3a4a6a; border-radius:8px; padding:0.6rem 1rem; font-family:Space Mono,monospace; font-size:0.8rem; color:#7aa0d4;'>🟤 BRONZE</div>
+                    <div style='background:#1e2a3a; border:1px solid #3a4a6a; border-radius:8px; padding:0.6rem 1rem; font-family:Space Mono,monospace; font-size:0.8rem; color:#7aa0d4;'>BRONZE</div>
                     <div style='color:#444;'>→</div>
                     <div style='font-size:0.8rem; color:#888;'>182M rows · 52 parquet files · Raw ingest</div>
                 </div>
                 <div style='display:flex; align-items:center; gap:1rem; margin-bottom:1rem;'>
-                    <div style='background:#1e2a3a; border:1px solid #3a4a6a; border-radius:8px; padding:0.6rem 1rem; font-family:Space Mono,monospace; font-size:0.8rem; color:#c0c0e0;'>⚪ SILVER</div>
+                    <div style='background:#1e2a3a; border:1px solid #3a4a6a; border-radius:8px; padding:0.6rem 1rem; font-family:Space Mono,monospace; font-size:0.8rem; color:#c0c0e0;'>SILVER</div>
                     <div style='color:#444;'>→</div>
                     <div style='font-size:0.8rem; color:#888;'>151M rows · Cleaned & validated · Nulls removed</div>
                 </div>
                 <div style='display:flex; align-items:center; gap:1rem;'>
-                    <div style='background:#2a2a1a; border:1px solid #5a5a2a; border-radius:8px; padding:0.6rem 1rem; font-family:Space Mono,monospace; font-size:0.8rem; color:#ffd24c;'>🟡 GOLD</div>
+                    <div style='background:#2a2a1a; border:1px solid #5a5a2a; border-radius:8px; padding:0.6rem 1rem; font-family:Space Mono,monospace; font-size:0.8rem; color:#ffd24c;'>GOLD</div>
                     <div style='color:#444;'>→</div>
                     <div style='font-size:0.8rem; color:#888;'>45 features · Engineered · Model-ready</div>
                 </div>

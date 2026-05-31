@@ -69,16 +69,6 @@ st.markdown("""
         overflow: hidden;
     }
 
-    .hero-banner::before {
-        content: "🚕";
-        position: absolute;
-        right: 2rem;
-        top: 50%;
-        transform: translateY(-50%);
-        font-size: 5rem;
-        opacity: 0.15;
-    }
-
     .hero-title {
         font-family: 'Space Mono', monospace;
         font-size: 2rem;
@@ -159,38 +149,38 @@ st.markdown("""
 with st.sidebar:
     st.markdown("""
         <div style='padding: 1rem 0; border-bottom: 1px solid #2a2a3a; margin-bottom: 1rem;'>
-            <div style='font-family: Space Mono, monospace; font-size: 1.1rem; color: #ffd24c; font-weight: 700;'>🚕 TLC Intelligence</div>
+            <div style='font-family: Space Mono, monospace; font-size: 1.1rem; color: #ffd24c; font-weight: 700;'>TLC Intelligence</div>
             <div style='font-size: 0.75rem; color: #666; margin-top: 0.3rem;'>NYC Yellow Taxi · 2022–2026</div>
         </div>
     """, unsafe_allow_html=True)
 
     page = st.radio(
         "Navigate",
-        ["🏠 Overview", "💰 Fare Predictor", "🚦 Congestion Insights", "📊 Model Performance", "🚗 Driver Earnings"],
+        ["Overview", "Fare Predictor", "Congestion", "Model Performance", "Driver Earnings"],
         key="nav",
         label_visibility="collapsed"
     )
 
     st.markdown("""
         <div style='margin-top: 2rem; padding-top: 0.8rem; border-top: 1px solid #2a2a3a; font-size: 0.7rem; color: #444;'>
-            <div>Parsa Majidifard</div>
+            <div>Parsa Majidifard · Deakin University</div>
             <div style='margin-top: 0.3rem;'>151M trips · Medallion Pipeline</div>
         </div>
     """, unsafe_allow_html=True)
 
 # Route to pages
-if page == "🏠 Overview":
+if page == "Overview":
     from views import overview
     overview.render()
-elif page == "💰 Fare Predictor":
+elif page == "Fare Predictor":
     from views import fare_predictor
     fare_predictor.render()
-elif page == "🚦 Congestion Insights":
+elif page == "Congestion":
     from views import congestion
     congestion.render()
-elif page == "📊 Model Performance":
+elif page == "Model Performance":
     from views import model_performance
     model_performance.render()
-elif page == "🚗 Driver Earnings":
+elif page == "Driver Earnings":
     from views import driver_earnings
     driver_earnings.render()

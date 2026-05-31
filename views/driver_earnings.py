@@ -41,7 +41,7 @@ def get_hourly_earnings():
 def render():
     st.markdown("""
         <div style='margin-bottom:1.5rem;'>
-            <h1 style='margin:0;'>🚗 Driver Earnings Analysis</h1>
+            <h1 style='margin:0;'>Driver Earnings</h1>
             <p style='color:#888; margin-top:0.3rem;'>Zone-by-zone breakdown of effective driver earnings per hour</p>
         </div>
     """, unsafe_allow_html=True)
@@ -63,7 +63,7 @@ def render():
                 </div>
             """, unsafe_allow_html=True)
 
-    tab1, tab2, tab3 = st.tabs(["🏆 Top Zones", "✈️ Trip Type Breakdown", "🕐 Best Hours to Drive"])
+    tab1, tab2, tab3 = st.tabs(["Top Zones", "Trip Type Breakdown", "Best Hours to Drive"])
 
     with tab1:
         df = get_zone_earnings().sort_values("Effective_$/hr", ascending=False)
@@ -101,7 +101,7 @@ def render():
 
         st.markdown("""
             <div style='background:#1a1a0e; border:1px solid #4a4a1a; border-radius:10px; padding:1rem 1.5rem; font-size:0.85rem; color:#c8c840; margin-top:1rem;'>
-                💡 <b>EWR Strategy:</b> Newark Airport trips command the highest effective hourly rate at <b>$648/hr</b>
+                <b>EWR Strategy:</b> Newark Airport trips command the highest effective hourly rate at <b>$648/hr</b>
                 because of the high flat fare (~$52) and relatively short wait times at the EWR taxi stand. 
                 JFK is second at $412/hr despite higher fares due to longer airport queue times.
             </div>

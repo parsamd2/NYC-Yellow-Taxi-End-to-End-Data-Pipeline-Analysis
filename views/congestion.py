@@ -42,7 +42,7 @@ def get_pre_post_congestion():
 def render():
     st.markdown("""
         <div style='margin-bottom:1.5rem;'>
-            <h1 style='margin:0;'>🚦 Congestion Insights</h1>
+            <h1 style='margin:0;'>Congestion Insights</h1>
             <p style='color:#888; margin-top:0.3rem;'>How NYC traffic congestion shapes taxi fares and travel times (2022–2026)</p>
         </div>
     """, unsafe_allow_html=True)
@@ -64,7 +64,7 @@ def render():
                 </div>
             """, unsafe_allow_html=True)
 
-    tab1, tab2, tab3, tab4 = st.tabs(["📈 Year-over-Year", "🕐 Hourly Pattern", "🗺️ By Borough", "🚧 Congestion Pricing Impact"])
+    tab1, tab2, tab3, tab4 = st.tabs(["Year-over-Year", "Hourly Pattern", "By Borough", "Pricing Impact"])
 
     PLOT_THEME = dict(
         paper_bgcolor="rgba(0,0,0,0)",
@@ -106,7 +106,7 @@ def render():
         # Add congestion pricing annotation
         st.markdown("""
             <div style='background:#1e1a0e; border:1px solid #5a4a1a; border-radius:10px; padding:1rem 1.5rem; font-size:0.85rem; color:#c8a840;'>
-                ⚠️ <b>January 2025</b>: NYC Congestion Pricing went into effect. Post-pricing analysis shows average fare increased <b>+$1.68</b>
+                <b>January 2025</b>: NYC Congestion Pricing went into effect. Post-pricing analysis shows average fare increased <b>+$1.68</b>
                 while CBD speeds <i>dropped</i> from 10.13 → 9.38 mph — likely a <b>selection effect</b> (only higher-value trips entered the CBD).
             </div>
         """, unsafe_allow_html=True)
