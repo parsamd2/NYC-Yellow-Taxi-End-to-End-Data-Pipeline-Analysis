@@ -167,16 +167,15 @@ with st.sidebar:
     page = st.radio(
         "Navigate",
         ["🏠 Overview", "💰 Fare Predictor", "🚦 Congestion Insights", "📊 Model Performance", "🚗 Driver Earnings"],
+        key="nav",
         label_visibility="collapsed"
     )
 
     st.markdown("""
-        <div style='position: absolute; bottom: 2rem; left: 1rem; right: 1rem;'>
-            <div style='font-size: 0.7rem; color: #444; border-top: 1px solid #2a2a3a; padding-top: 0.8rem;'>
-                <div>Parsa Majidifard · 225539173</div>
-                <div>Deakin University · SIT731</div>
-                <div style='margin-top: 0.3rem;'>151M trips · Medallion Pipeline</div>
-            </div>
+        <div style='margin-top: 2rem; padding-top: 0.8rem; border-top: 1px solid #2a2a3a; font-size: 0.7rem; color: #444;'>
+            <div>Parsa Majidifard · 225539173</div>
+            <div>Deakin University · SIT731</div>
+            <div style='margin-top: 0.3rem;'>151M trips · Medallion Pipeline</div>
         </div>
     """, unsafe_allow_html=True)
 
